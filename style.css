@@ -1,0 +1,261 @@
+
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+
+/* Navigation */
+header {
+    background: #111a2e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    color: white;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero section */
+.hero {
+    max-width: 1150px;
+    min-height: 85vh;
+    margin: auto;
+    padding: 60px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.welcome {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    color: #cbd5e1;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.hero-content > p:not(.welcome) {
+    color: #94a3b8;
+    max-width: 520px;
+    margin-bottom: 28px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    margin: 5px 8px 5px 0;
+    background: #38bdf8;
+    color: #07111f;
+    text-decoration: none;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #38bdf8;
+}
+
+/* Profile image */
+.hero-image {
+    flex: 0 0 300px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 35px #38bdf833;
+}
+
+/* All sections */
+.section {
+    padding: 80px 25px;
+    text-align: center;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+.section-text {
+    max-width: 800px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+/* Skills */
+.skills-container,
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 20px 30px;
+    background: #111a2e;
+    border: 1px solid #26364d;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+/* Projects */
+.project-card {
+    flex: 1 1 250px;
+    max-width: 340px;
+    padding: 30px 22px;
+    text-align: left;
+    background: #111a2e;
+    border: 1px solid #26364d;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #94a3b8;
+}
+
+/* Contact */
+#contact p {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111a2e;
+    color: #94a3b8;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 260px;
+    }
+
+    .hero-content > p:not(.welcome) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        padding: 55px 20px;
+    }
+}
