@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <title>Anish Giree | Portfolio</title>
 
     <!-- Connect CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
-            <h2 class="logo">MyPortfolio<span>.</span></h2>
+            <a href="#home" class="logo">Anish<span>.</span></a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -27,91 +28,157 @@
         </nav>
     </header>
 
-    <!-- Home section -->
+    <!-- Home Section -->
     <section id="home" class="hero">
+
         <div class="hero-content">
             <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-            <h1>Hi, I'm <span>Rajiv Tamang</span></h1>
+            <h1>Hi, I'm <span>Anish Giree</span></h1>
 
             <h2>Computer Engineering Student</h2>
 
-            <p>
-                I am passionate about technology, web development,
+            <p class="description">
+                I am passionate about technology, programming,
+                and web development. I love learning new skills
                 and creating beautiful digital experiences.
             </p>
 
-            <a href="#projects" class="btn">View My Work</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+            </div>
         </div>
 
         <div class="hero-image">
-            <img src="profile.jpg" alt="My profile picture">
+            <img src="profile.jpg" alt="Anish Giree profile picture">
         </div>
+
     </section>
 
-    <!-- About section -->
+    <!-- About Section -->
     <section id="about" class="section">
+
+        <p class="section-subtitle">GET TO KNOW ME</p>
         <h2 class="section-title">About Me</h2>
 
         <p class="section-text">
-            Hello! My name is Rajiv Tamang. I am a Computer Engineering
-            student at Seoul Theological University. I enjoy learning
-            programming, designing websites, and exploring new technologies.
-            My goal is to become a skilled software developer.
+            Hello! My name is Anish Giree. I am a Computer Engineering
+            student at Seoul Theological University. I am interested
+            in programming, website development, and modern technology.
+            I enjoy solving problems, learning new things, and improving
+            my technical skills. My goal is to become a skilled software
+            developer and build useful applications for the future.
         </p>
+
     </section>
 
-    <!-- Skills section -->
+    <!-- Skills Section -->
     <section id="skills" class="section">
+
+        <p class="section-subtitle">WHAT I AM LEARNING</p>
         <h2 class="section-title">My Skills</h2>
 
         <div class="skills-container">
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">Computer Skills</div>
-            <div class="skill-card">Problem Solving</div>
+            <div class="skill-card">
+                <span class="skill-number">01</span>
+                <h3>HTML</h3>
+                <p>Creating website structures</p>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-number">02</span>
+                <h3>CSS</h3>
+                <p>Designing beautiful websites</p>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-number">03</span>
+                <h3>Python</h3>
+                <p>Learning programming logic</p>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-number">04</span>
+                <h3>Problem Solving</h3>
+                <p>Finding creative solutions</p>
+            </div>
         </div>
+
     </section>
 
-    <!-- Projects section -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
+
+        <p class="section-subtitle">MY RECENT WORK</p>
         <h2 class="section-title">My Projects</h2>
 
         <div class="projects-container">
+
             <div class="project-card">
+                <div class="project-icon">&lt;/&gt;</div>
                 <h3>Personal Portfolio</h3>
-                <p>A responsive website to introduce myself and my skills.</p>
+                <p>
+                    A personal website built with HTML and CSS
+                    to showcase my skills and introduce myself.
+                </p>
+                <span class="project-tag">HTML · CSS</span>
             </div>
 
             <div class="project-card">
-                <h3>Python Projects</h3>
-                <p>Beginner Python programs created while learning programming.</p>
+                <div class="project-icon">{ }</div>
+                <h3>Python Programs</h3>
+                <p>
+                    Beginner programming exercises to practice
+                    logic, calculations, and problem solving.
+                </p>
+                <span class="project-tag">Python</span>
             </div>
 
             <div class="project-card">
+                <div class="project-icon">WEB</div>
                 <h3>Web Design</h3>
-                <p>Simple and creative website designs using HTML and CSS.</p>
+                <p>
+                    Simple and creative website layouts designed
+                    to improve my front-end development skills.
+                </p>
+                <span class="project-tag">Web Development</span>
             </div>
+
         </div>
+
     </section>
 
-    <!-- Contact section -->
-    <section id="contact" class="section">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+
+        <p class="section-subtitle">LET'S CONNECT</p>
         <h2 class="section-title">Contact Me</h2>
 
-        <p>Email: rajivtamang2@gmail.com</p>
-        <p>Location: South Korea</p>
+        <p class="section-text">
+            Have a project idea or want to connect?
+            Feel free to send me an email.
+        </p>
 
-        <a href="mailto:rajivtamang2@gmail.com" class="btn">
+        <div class="contact-details">
+            <p><strong>Name:</strong> Anish Giree</p>
+            <p><strong>Field:</strong> Computer Engineering</p>
+            <p><strong>Location:</strong> South Korea</p>
+            <p><strong>Email:</strong> YOUR_EMAIL@gmail.com</p>
+        </div>
+
+        <a href="mailto:YOUR_EMAIL@gmail.com" class="btn">
             Send Me an Email
         </a>
+
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Rajiv Tamang | My Portfolio</p>
+        <p>© 2026 Anish Giree. All rights reserved.</p>
+        <a href="#home">Back to Top ↑</a>
     </footer>
 
 </body>
